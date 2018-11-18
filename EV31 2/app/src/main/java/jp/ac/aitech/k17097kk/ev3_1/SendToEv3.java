@@ -1,20 +1,19 @@
 package jp.ac.aitech.k17097kk.ev3_1;
 
-import android.os.AsyncTask;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
 
-public class SendToEv3 extends AsyncTask<String, String, String> {
+
+public class SendToEv3 extends Thread {
 
     private static final long serialVersionUID = 1L;
     private BufferedWriter bw;
     private Socket socket;
 
     @Override
-    protected String doInBackground(String...command ) {
+    public void run() {
 
         try {
             // ソケットを開く
@@ -33,14 +32,10 @@ public class SendToEv3 extends AsyncTask<String, String, String> {
         } catch (IOException e) {
             System.out.println(e);
         }
-        return null;
     }
 
-    @Override
-    protected void onPostExecute(String s) {
-        super.onPostExecute(s);
-    }
 
+    // EV3に命令を送る
     private void sendCommand(String mode, String number) {
         try {
             String command = mode + "," + number + "\n";
