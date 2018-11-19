@@ -42,8 +42,18 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                connect = new SendToEv3("LeftRotate", "90");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                connect = new SendToEv3("STRAIGHT", "450");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -51,8 +61,18 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                connect = new SendToEv3("LeftRotate", "90");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                connect = new SendToEv3("STRAIGHT", "900");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -60,8 +80,12 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                connect = new SendToEv3("STRAIGHT", "450");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -69,8 +93,18 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                connect = new SendToEv3("LeftRotate", "45");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                connect = new SendToEv3("STRAIGHT", "630");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -79,7 +113,11 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 
                 connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -87,8 +125,12 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                connect = new SendToEv3("STRAIGHT", "900");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -97,7 +139,11 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 
                 connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -105,8 +151,18 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                connect = new SendToEv3("LeftRotate", "45");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                connect = new SendToEv3("STRAIGHT", "1260");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -114,8 +170,12 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                connect = new SendToEv3("STRAIGHT", "1350");
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -124,7 +184,11 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 
                 connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
@@ -133,7 +197,11 @@ public class MainActivity extends Activity {
             public void onClick(View view) {
 
                 connect = new SendToEv3("STRAIGHT", "500");
-                connect.start();
+                try {
+                    connect.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             }
         });
