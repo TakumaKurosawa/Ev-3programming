@@ -12,8 +12,8 @@ public class SendToEv3 extends Thread {
     private BufferedWriter bw;
     private Socket socket;
 
-    @Override
-    public void run() {
+
+    public void run(String mode, String number) {
 
         try {
             // ソケットを開く
