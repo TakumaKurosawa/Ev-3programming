@@ -11,9 +11,16 @@ public class SendToEv3 extends Thread {
     private static final long serialVersionUID = 1L;
     private BufferedWriter bw;
     private Socket socket;
+    private String mode;
+    private String number;
 
+    public SendToEv3(String mode, String number) {
+        this.mode = mode;
+        this.number = number;
+    }
 
-    public void run(String mode, String number) {
+    @Override
+    public void run() {
 
         try {
             // ソケットを開く
@@ -23,7 +30,7 @@ public class SendToEv3 extends Thread {
             bw = new BufferedWriter(new
                     OutputStreamWriter(socket.getOutputStream()));
 
-            sendCommand("STRAIGHT", "500");
+            sendCommand(this.mode, this.number);
 
 
             bw.close();

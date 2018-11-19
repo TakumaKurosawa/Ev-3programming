@@ -42,8 +42,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -51,8 +51,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -60,8 +60,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -69,8 +69,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -78,8 +78,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -87,8 +87,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -96,8 +96,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -105,8 +105,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -114,8 +114,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -123,8 +123,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
@@ -132,8 +132,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                connect = new SendToEv3();
-                connect.run("STRAIGHT", "500");
+                connect = new SendToEv3("STRAIGHT", "500");
+                connect.start();
 
             }
         });
